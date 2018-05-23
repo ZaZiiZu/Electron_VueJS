@@ -24,7 +24,7 @@
             <v-layout row wrap>
               <v-flex d-flex>
                 <div class='diceRolls'>
-                  <v-btn block @click="rolls_trigger()" :ripple="false" :disabled="((state.rollCounter<=0||isNaN(state.rollCounter))&&!state.newTurn||state.newGame==1)"
+                  <v-btn @click="rolls_trigger()" :ripple="false" :disabled="((state.rollCounter<=0||isNaN(state.rollCounter))&&!state.newTurn||state.newGame==1)"
                     :class="{highlighted: state.newTurn, active: !state.newTurn}">
                     <span v-if="state.newGame">newGame</span>
                     <span v-else-if="state.newTurn">New turn</span>
@@ -269,16 +269,16 @@
       },
 
       writeLogAdd(currentPlayer, message) {
-        // const array = this.playerLog[currentPlayer];
-        // const pointer = array.length;
-        //array[pointer] = array.unshift(message);
+        const array = this.playerLog[currentPlayer];
+        const pointer = array.length;
+        array[pointer] = array.unshift(message);
       },
       writeLogRemoveLast(player, asdf) {
-        // const column = player || this.state.currentPlayer;
+        const column = player || this.state.currentPlayer;
         const amount = asdf || 1;
-        // const array = this.playerLog[column];
+        const array = this.playerLog[column];
         for (let i = 0; i < amount; i += 1) {
-          //array.shift();
+          array.shift();
         }
       },
 
