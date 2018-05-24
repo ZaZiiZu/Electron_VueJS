@@ -41,8 +41,6 @@
 </script>
 
 <style scoped>
-  .sheet {}
-
   p {
     color: red;
   }

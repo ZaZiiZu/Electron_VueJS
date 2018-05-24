@@ -5,11 +5,11 @@ import axios from 'axios'
 import colors from 'vuetify/es5/util/colors'
 import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
 
-
-
 import App from './App'
 import router from './router'
 import store from './store'
+
+
 
 Vue.use(Vuetify, {
   theme: {

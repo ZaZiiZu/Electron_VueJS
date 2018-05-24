@@ -8,7 +8,7 @@ export default new Router({
     {
       path: '/',
       name: 'landing-page',
-      component: require('@/components/Kniffel').default
+      component: require('@/components/MainContainer').default
     },
     {
       path: '*',

@@ -6,10 +6,10 @@
 
 <script>
   export default {
-    name: 'kniffelev'
+    name: 'ProjectX'
   }
 </script>
 
-<style>
+<style scoped>
   /* CSS */
 </style>
